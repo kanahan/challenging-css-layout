@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impossible Layout</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: white;
+    }
+
+    .wrapper {
+      max-width: 500px;
+    }
+
+    .wrapper img {
+      max-width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+      body {
+        background-color: lightblue;
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+      }
+    }
+  </style>
+
+  <div class="wrapper">
+    <img src="https://source.unsplash.com/random">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus inventore sunt hic aut iste vitae, odit
+      veritatis dignissimos iure facere pariatur voluptatibus eveniet soluta. Animi corrupti accusantium aut
+      reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus inventore sunt hic aut iste
+      vitae, odit
+      veritatis dignissimos iure facere pariatur voluptatibus eveniet soluta. Animi corrupti accusantium aut
+      reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus inventore sunt hic aut iste
+      vitae, odit
+      veritatis dignissimos iure facere pariatur voluptatibus eveniet soluta. Animi corrupti accusantium aut
+      reprehenderit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus inventore sunt hic aut iste
+      vitae, odit
+      veritatis dignissimos iure facere pariatur voluptatibus eveniet soluta. Animi corrupti accusantium aut
+      reprehenderit?
+    </p>
+    <p>testinga 12312jls asdfi
+    </p>
+    <img src="https://source.unsplash.com/random?v=2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus inventore sunt hic aut iste vitae, odit
+      veritatis dignissimos iure facere pariatur voluptatibus eveniet soluta. Animi corrupti accusantium aut
+      reprehenderit?
+    </p>
+
+    <img src="https://source.unsplash.com/random?v=3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut ducimus inventore sunt hic aut iste vitae, odit
+      veritatis dignissimos iure facere pariatur voluptatibus eveniet soluta. Animi corrupti accusantium aut
+      reprehenderit?
+    </p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
